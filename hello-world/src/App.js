@@ -11,6 +11,7 @@ function App() {
 
   useEffect(() => {
     fetch('/.netlify/functions/hello')
+    //fetch('http://localhost:300/hello')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
